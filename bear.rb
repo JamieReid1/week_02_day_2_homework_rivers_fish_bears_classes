@@ -14,8 +14,8 @@ class Bear
     return @stomach.length
   end
 
-  # def eat_fish(fish)
-  #   @stomach << fish
-  # end
+  def eat_fish(fish)
+    @stomach << fish
+  end
 
 end
