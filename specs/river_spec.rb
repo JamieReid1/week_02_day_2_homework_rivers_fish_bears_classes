@@ -9,8 +9,6 @@ class RiverTest < MiniTest::Test
 
   def setup
 
-    @river = River.new("Isla")
-
     @fish1 = Fish.new("Sam")
     @fish2 = Fish.new("Sally")
     @fish3 = Fish.new("Terry")
@@ -19,6 +17,7 @@ class RiverTest < MiniTest::Test
     @fish6 = Fish.new("Molly")
 
     @fish_arr = [@fish1, @fish2, @fish3, @fish4, @fish5, @fish6]
+    @river = River.new("Isla", @fish_arr)
 
   end
 
@@ -27,7 +26,12 @@ class RiverTest < MiniTest::Test
   end
 
   def test_river_has_fish()
-    assert_equal(6, @fish_arr.length)
+    assert_equal(6, @river.fish.length)
+  end
+
+  def test_bear_takes_fish()
+    @river.bear_takes_fish(@fish1)
+    assert_equal(5, @river.fish.length)
   end
 
 
