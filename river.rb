@@ -9,8 +9,5 @@ class River
     @fish = fish
   end
 
-  def bear_takes_fish(fish)
-    @fish.delete(fish)
-  end
 
 end

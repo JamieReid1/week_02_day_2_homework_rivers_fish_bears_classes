@@ -19,6 +19,7 @@ class BearTest < MiniTest::Test
     @fish6 = Fish.new("Molly")
 
     @fish_arr = [@fish1, @fish2, @fish3, @fish4, @fish5, @fish6]
+    @river = River.new("Isla", @fish_arr)
 
   end
 
@@ -35,11 +36,10 @@ class BearTest < MiniTest::Test
   end
 
   def test_bear_can_take_fish_from_river()
-    @bear.eat_fish(@fish1)
+    @bear.eat_fish(@fish1, @river)
     assert_equal(1, @bear.stomach.length)
+    assert_equal(5, @river.fish.length)
   end
-  
-
 
 
 end
