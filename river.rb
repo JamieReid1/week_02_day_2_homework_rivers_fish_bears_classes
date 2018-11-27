@@ -1,11 +1,11 @@
 
 class River
 
-  attr_reader :name, :fish 
+  attr_reader :name, :fish
 
-  def initialize(name)
+  def initialize(name, fish = [ ])
     @name = name
-    @fish = [ ]
+    @fish = fish
   end
 
 

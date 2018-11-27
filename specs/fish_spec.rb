@@ -16,7 +16,7 @@ class FishTest < MiniTest::Test
     @fish5 = Fish.new("Mike")
     @fish6 = Fish.new("Molly")
 
-    @fish = [@fish1, @fish2, @fish3, @fish4, @fish5, @fish6]
+    @fish_arr = [@fish1, @fish2, @fish3, @fish4, @fish5, @fish6]
 
   end
 
