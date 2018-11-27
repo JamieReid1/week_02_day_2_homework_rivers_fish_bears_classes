@@ -10,10 +10,6 @@ class Bear
     @stomach = [ ]
   end
 
-  def stomach_contents()
-    return @stomach.length
-  end
-
   def eat_fish(fish, river)
     for a_fish in river.fish
       if a_fish == fish
@@ -22,6 +18,10 @@ class Bear
       end
     end
   end
-  
+
+  def roar()
+    return "RROOOOAAARRRR!"
+  end
+
 
 end
