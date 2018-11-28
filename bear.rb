@@ -19,6 +19,10 @@ class Bear
     end
   end
 
+  def stomach_contents()
+    return @stomach.length
+  end
+
   def roar()
     return "RROOOOAAARRRR!"
   end
