@@ -10,13 +10,17 @@ class Bear
     @stomach = [ ]
   end
 
-  def eat_fish(fish, river)
-    for a_fish in river.fish
-      if a_fish == fish
-        @stomach << a_fish
-        river.fish.delete(a_fish)
-      end
-    end
+  # def eat_fish(fish, river)
+  #   for a_fish in river.fish
+  #     if a_fish == fish
+  #       @stomach << a_fish
+  #       river.fish.delete(a_fish)
+  #     end
+  #   end
+  # end
+
+  def eat_fish(fish)
+    @stomach << fish
   end
 
   def stomach_contents()

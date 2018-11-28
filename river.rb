@@ -13,4 +13,8 @@ class River
     return @fish.length
   end
 
+  def bear_takes_fish(fish)
+    @fish.delete(fish)
+  end
+
 end
