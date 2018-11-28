@@ -25,10 +25,6 @@ class RiverTest < MiniTest::Test
     assert_equal("Isla", @river.name)
   end
 
-  def test_river_has_fish()
-    assert_equal(6, @river.fish.length)
-  end
-
   def test_fish_count()
     assert_equal(6, @river.fish_count())
   end
